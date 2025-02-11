@@ -26,9 +26,9 @@ jobs:
       - name: Install Ruby Dependencies
         run: bundle install
 
-      # Run Ruby Tests (RSpec Example)
+      # Run Ruby Application in background mode
       - name: Run Ruby Application
-        run: bundle exec rails s -p 3000
+        run: bundle exec rails s -p 3000 &
 
       # setup node environment
       - uses: actions/checkout@v4
