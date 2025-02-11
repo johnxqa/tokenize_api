@@ -30,3 +30,29 @@ bundle install
   }
 }
 ```
+
+## Automation Test Framework
+
+This test framework is built using the open-source framework for cross-browser automation and end-to-end web application testing which is [Playwright](https://playwright.dev/docs/intro)
+
+### install the packages
+
+From the root folder, run the `npm` installation command below
+```bash
+npm install
+```
+
+### Running the tests
+
+Before running, ensure that the Frontend and Backend is running.
+```bash
+npx playwright test
+```
+
+### Review the run report
+```bash
+npx playwright show-report
+```
+
+### Alternative Automation Framework Considered
+When choosing an automated testing framework, alternatives like Pytest was also considered. Playwright was selected because of its flexibility to manage both frontend and backend automated tests.
