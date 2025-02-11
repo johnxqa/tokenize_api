@@ -44,9 +44,6 @@ jobs:
       - name: Run Playwright tests
         run: npx playwright test
 
-      - name: Publish Test Summary Results
-        run: npx github-actions-ctrf test-results/*.json
-
       # Upload Playwright report
       - uses: actions/upload-artifact@v4
         if: ${{ !cancelled() }}
